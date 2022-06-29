@@ -12,7 +12,7 @@ Ejecutar en la consola <b>npm start</b><br>
 Por cualquier duda o consulta: alejoragg@gmail.com
 </p>
 <h3>Varibales de entorno FIREBASE</h3>
-Revisa un ejemplo en <a target="_blank" href="https://github.com/alejoragg/cursoreact/primerApp/my-app-test/.env.example">[`env.example`]</a>
+Revisa un ejemplo en <a target="_blank" href="https://github.com/alejoragg/cursoreactfinal/blob/main/.env.example">[`env.example`]</a>
 
 <h3>La estructura de los documentos de los productos debe ser la siguiente:</h3>
 <p>category, description, name, photos, price, stock</p>
