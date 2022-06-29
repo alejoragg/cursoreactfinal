@@ -5,7 +5,7 @@
 <p></p>
 <img src="./public/grabacion.gif">
 <p align="left">
-Para ejecutar el proyecto clonar el repo: https://alejoragg.github.io/cursoreact/
+Para ejecutar el proyecto clonar el repo: https://github.com/alejoragg/cursoreactfinal.git
 <br>cd my-app-test
 
 Ejecutar en la consola <b>npm start</b><br>
