@@ -21,10 +21,10 @@ const ItemDetail = ({ name, category, id, price, description, photos, stock }) =
                 <div className='image-thumb col-4' style={{backgroundImage:`url(${photos})`}}></div>
                 <div className='col row'>
                     <div><b>Código:</b> {id}</div>
-                    <div><b>Nombre ID:</b> {name}</div>
+                    <div><b>Nombre:</b> {name}</div>
                     <div><b>Categoria:</b> {category}</div>
                     <div><b>Descripción:</b> {description}</div>
-                    <div><b>Precio:</b> USD {price}</div>
+                    <div><b>Precio:</b> MXN {price}</div>
                     <div><b>Stock:</b> {stock}</div>
                     { stock === 0 ? <div className='sinStock'>Producto sin Stock</div> : quantity > 0 
                         ? <div><Link to="/cart" className='btn btn-outline-success'>Terminar compra</Link></div>

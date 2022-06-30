@@ -17,7 +17,10 @@ const NavBar = () => {
         <Collapse isOpen={!collapsed} navbar className=''>
             <Nav navbar className='ms-auto mb-2 mb-lg-0 text-center'>
                 <NavItem>
-                    {/*({isActive}) => isActive ? 'ActiveOption' : 'Option'*/}
+                    <Link to="/" className='nav-link'>
+                        Home
+                    </Link>
+                </NavItem><NavItem>
                     <Link to="/about" className='nav-link'>
                         About Us
                     </Link>

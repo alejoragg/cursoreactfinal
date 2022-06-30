@@ -9,8 +9,10 @@ nav.navbar {box-shadow: 1px 1px 6px 0px #ccc;}
 .price {position: absolute;color: white;font-size: 2em;font-weight: 500;background: #00000066;padding: 0 10px;border-radius: 5px;right: 0px;bottom: 0;}
 .close {font-weight: 700;font-size: 1.4em;cursor: pointer;}
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {border-bottom: 1px solid;}
-.image-thumb {background-position: center;background-size: cover;}
+.image-thumb {background-position: 50%;background-size: contain;height: 310px;background-repeat: no-repeat;}
 .outline {border-radius: 5px;border: 1px solid #ccc;}
 .total {display: inline-block;padding: 20px;border-radius: 5px;border: 1px solid #32a506;font-weight: 700;}
 .sinStock{color: red;}
 .alert {width: 50%;position: absolute;right: 20px;left: 0;margin: 20px 0 0 auto;}
+.card {box-shadow: 0px 2px 4px 0px #ccc;}
+.row.my-2.outline.p-2 {box-shadow: 0px 1px 4px 1px #ccc;}

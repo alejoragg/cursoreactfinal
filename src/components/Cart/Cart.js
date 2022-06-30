@@ -90,11 +90,11 @@ const Cart = () => {
                     suma(prod.price * prod.quantity)
                     return(
                         <div key={prod.id} className="row my-2 outline p-2">
-                            <div className="col"><Link to={'/detail/'+prod.id}>Nombre: {prod.name}</Link></div>
-                            <div className="col">Cantidad: {prod.quantity}</div>
-                            <div className="col">Precio: {prod.price}</div>
-                            <div className="col">Subtotal: { prod.price * prod.quantity }</div>
-                            <div className="col">
+                            <div className="col my-auto"><Link to={'/detail/'+prod.id}>Nombre: {prod.name}</Link></div>
+                            <div className="col my-auto">Cantidad: <b>{prod.quantity}</b></div>
+                            <div className="col my-auto">Precio: MXN {prod.price}</div>
+                            <div className="col my-auto">Subtotal: MXN { prod.price * prod.quantity }</div>
+                            <div className="col-1">
                                 <Button className="btn btn-danger" onClick={()=>removeItem(prod.id)}>X</Button>
                             </div>
                         </div>
@@ -103,15 +103,14 @@ const Cart = () => {
                 
                     {cart.length > 0 ? 
                         <div>
-                            <div className="total my-4">Total: {subtotal}</div>
+                            <div className="total my-4">Total: MXN {subtotal}</div>
                             <div className="row">
                                 <div className="col"><Button onClick={()=>clearCart()} className="btn btn-outline-danger" outline>Limpiar Carro</Button></div>
-                                {/*<div className="col"><Button onClick={()=>createOrder()}>Generar Orden</Button></div>*/}
                                 <div className="col"><Button onClick={toggle}>Generar Orden</Button></div>
-                               <Modalview isOpen={modalStatus} toggle={toggle} setBuyer={setBuyerModal}/>
+                                <Modalview isOpen={modalStatus} toggle={toggle} setBuyer={setBuyerModal}/>
                             </div>
                         </div>
-                            : <div className="mt-4">El carro esta vácio <br></br><Link to={'/'}>Puedes seguir comprando</Link></div>
+                            : <div className="mt-4">El carro esta vácio <br></br><Link to={'/'} className="btn mt-4 btn-outline-success">Puedes seguir comprando</Link></div>
                     }
                 
             </div>
